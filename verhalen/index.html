@@ -2,9 +2,10 @@
 <html lang="nl">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Overzicht</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
 <body>
@@ -33,41 +34,89 @@
     </header>
 
     <main>
-        <section>
+        <form action="/">
             <h1>TravelStories</h1>
             <a href="index.html">Willekeurig verhaal</a>
-        </section>
-        <section>
+        </form>
+        <form action="/">
             <h3>Filter op:</h3>
             <button>Categorieën</button>
             <ul>
-                <li><a href="">Bekende mensen</a></li>
-                <li><a href="">Dichtvormen</a></li>
-                <li><a href="">Gemoedstoestand</a></li>
-                <li><a href="">Perspectief</a></li>
-                <li><a href="">Schrijfstijl</a></li>
-                <li><a href="">Spreekstijl</a></li>
-                <li><a href="">Thematische wereld</a></li>
+                <li>
+                    <input type="checkbox" id="bekende" name="categorieën">
+                    <label for="bekende">Bekende mensen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="dichtvorm" name="categorieën">
+                    <label for="dichtvorm">Dichtvorm</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="gemoedstoestand" name="gemoedstoestand">
+                    <label for="gemoedstoestand">Gemoedstoestand</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="perspectief" name="categorieën">
+                    <label for="perspectief">Perspectief</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="schrijfstijl" name="categorieën">
+                    <label for="schrijfstijl">Schrijfstijl</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="spreekstijl" name="categorieën">
+                    <label for="spreekstijl">Spreekstijl</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="thematische" name="categorieën">
+                    <label for="thematische">Thematische wereld</label>
+                </li>
             </ul>
             <button>Leesduur</button>
             <ul>
-                <li><a href="">0-5</a></li>
-                <li><a href="">5-10</a></li>
-                <li><a href="">10+</a></li>
+                <li>
+                    <input type="checkbox" id="kort" name="leesduur">
+                    <label for="kort">Kort</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="normaal" name="leesduur">
+                    <label for="normaal">Normaall</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="lang" name="leesduur">
+                    <label for="lang">Lang</label>
+                </li>
             </ul>
-        </section>
-        <section>
+        </form>
+        <form action="/">
             <h3>Sorteer op:</h3>
             <button>Sorteer</button>
             <ul>
-                <li><a href="">A-Z</a></li>
-                <li><a href="">Z-A</a></li>
-                <li><a href="">Datum</a></li>
-                <li><a href="">Likes</a></li>
-                <li><a href="">Comments</a></li>
+                <li>
+                    <input type="radio" id="A-Z" name="sorteer">
+                    <label for="A-Z">A-Z</label>
+                </li>
+                <li>
+                    <input type="radio" id="Z-A" name="sorteer">
+                    <label for="Z-A">Z-A</label>
+                </li>
+                <li>
+                    <input type="radio" id="datum-up" name="sorteer">
+                    <label for="datum-up">Datum&#8593;</label>
+                </li>
+                <li>
+                    <input type="radio" id="datum" name="sorteer">
+                    <label for="datum">Datum&#8595;</label>
+                </li>
+                <li>
+                    <input type="radio" id="likes-up" name="sorteer">
+                    <label for="likes-up">Likes&#8593;</label>
+                </li>
+                <li>
+                    <input type="radio" id="likes" name="sorteer">
+                    <label for="likes">Likes&#8595;</label>
+                </li>
             </ul>
-            <button>Leesduur</button>
-        </section>
+        </form>
         <article>
             <ul>
                 <li>

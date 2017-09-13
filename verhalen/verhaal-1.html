@@ -2,9 +2,10 @@
 <html lang="nl">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Zombie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
 <body>
@@ -43,6 +44,20 @@
         <p>Vijftien minuten later deelt de medewerker mij mede dat er lang over heeft nagedacht, maar dat hij geen idee heeft hoe je het magazijn zonder mail moet bereiken. Enigszins teleurgesteld begin ik aan de barre tocht terug.</p>
         <p>Op het Bos en Lommerplein, vlak bij mijn schuilplaats onder de restanten van de ringweg, vind ik in een verlaten babywinkel een paar prachtige babyschoentjes voor mijn zoon.</p>
     </main>
+
+    <form action="/">
+        <fieldset>
+            <legend>Geef een reactie</legend>
+            <label for="naam">Naam*</label>
+            <input type="text" id="naam" name="naam" required>
+            <label for="email">Bericht</label>
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Bericht</label>
+            <textarea rows="5" cols="25" id="message" name="message" placeholder="Schrijf een reactie..."></textarea>
+        </fieldset>
+        <button type="submit">Reactie plaatsen</button>
+    </form>
 
     <footer>
         <p>© 2017 www.travelstories.nl</p>
