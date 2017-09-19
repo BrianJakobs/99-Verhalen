@@ -15,6 +15,10 @@ Reset
     border-collapse: collapse;
 }
 
+:root {
+    font-size: 1em;
+}
+
 body {
     line-height: 1;
 }
@@ -41,57 +45,270 @@ Body style
 ========================================
 */
 
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../fonts/NexaBold.eot');
+    src: url('../fonts/NexaBold.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaBold.woff') format('woff'), url('../fonts/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../fonts/NexaLight.eot');
+    src: url('../fonts/NexaLight.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaLight.woff') format('woff'), url('../fonts/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 body {
     color: black;
     font-size: 1rem;
+    font-family: Nexa;
+    background-color: #f3e5d8;
 }
 
-body main{
+body main {
     margin-right: 15vw;
     margin-left: 15vw;
-}
-
-nav ul {
-    background-color: green;
-    color: #fff;
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    height: 100%;
-}
-
-nav ul li a{
-    color: #fff;
-}
-
-form {
-    margin-top: 2rem;
-}
-
-form button {
-    margin-top: 1rem;
-}
-
-p {
-    margin-top: 0.5rem;
-}
-
-article ul li {
-    margin-top: 2rem;
 }
 
 a {
     text-decoration: none;
 }
 
-footer{
+p {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #eef3f7;
     margin-top: 2rem;
-    background-color: mediumblue;
     width: 100%;
     padding: 2rem;
-    color: #fff;
+    color: #606060;
+}
+
+input {
+    border: solid 0.1rem grey;
+    display: block;
+}
+
+
+/*
+========================================
+Home
+========================================
+*/
+
+section:first-child {
+    height: 50vh;
+    margin-right: -15vw;
+    margin-left: -15vw;
+    background-image: url(../images/cover-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:first-child a {
+    display: block;
+    width: 20rem;
+    background-color: #ff3268;
+    padding: 1rem;
+    font-family: NexaBold;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section:first-child h1 {
+    font-family: NexaBold;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+    color: white;
+}
+
+
+/*
+========================================
+Nav style
+========================================
+*/
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 0.1rem 1rem grey;
+    background-color: white;
+    padding: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 2rem;
+    vertical-align: middle;
+}
+
+nav ul li a,
+nav ul li input {
+    font-family: NexaBold;
+    font-size: 1.2rem;
+    color: #00d66c;
+}
+
+nav img {
+    width: 2rem;
+}
+
+nav form input {
+    width: 15rem;
+    height: 2rem;
+    padding: 1rem;
+    margin-left: 8rem;
+    background-image: url(../images/search.png);
+    background-position: 12rem;
+    ;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    border-radius: 5rem;
+}
+
+header nav ul li:nth-last-of-type(4) {
+    margin-right: auto;
+}
+
+
+/*
+========================================
+Filter style
+========================================
+*/
+
+aside ul {
+    display: none;
+}
+
+aside form a {
+    display: inline;
+    background-color: #ff3268;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    border-radius: 4rem;
+    color: #ffffff;
+}
+
+aside form:nth-of-type(2) a {
+    float: right;
+}
+
+aside form:first-of-type a:first-of-type {
+    margin-left: 0;
+}
+
+#categorie:target {
+    display: block;
+}
+
+#leesduur:target {
+    display: block;
+}
+
+#sorteer:target {
+    display: block;
+}
+
+aside ul li {
+    display: inline-block;
+}
+
+aside h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: NexaBold;
+    font-size: 1.4rem;
+    color: #2800a0;
+}
+
+
+/*
+========================================
+Article style
+========================================
+*/
+
+article img {
+    width: 2rem;
+}
+
+article button {
+    background: none;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    margin: -1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    color: #2800a0;
+    font-family: NexaBold;
+    background-color: #ffffff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+article {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #eef3f7;
+    border-radius: 1rem;
+}
+
+time {
+    color: #00d66c;
+}
+
+article:last-of-type {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: inline;
+}
+
+/*
+========================================
+Story style
+========================================
+*/
+
+main>h3 {
+    font-family: NexaBold;
+    font-size: 4rem;
+    color: #2800a0;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+main>span{
+    font-family: NexaBold;
+    color: #00d66c;
+    margin-left: 2rem;
+}
+main>span:first-of-type{
+    margin: 0;
+}
+main form:last-of-type input{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+}
+main p:last-of-type{
+    margin-bottom: 2rem;
 }

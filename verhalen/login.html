@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+                    <a href="index.html"><img src="assets/images/home.png" alt="logo"></a>
                 </li>
                 <li>
                     <form>
@@ -38,13 +38,16 @@
         <form action="/">
             <fieldset>
                 <legend>Login</legend>
-                <label for="firstname">Gebruikersnaam</label>
-                <input type="text" id="firstname" name="firstname" autofocus required placeholder="John">
-                <label for="lastname">Wachtwoord</label>
-                <input type="text" id="lastname" name="lastname" required placeholder="AbC123">
+                <label>Gebruikersnaam
+                    <input type="text" name="firstname" autofocus required placeholder="John">
+                </label>
+                <label>Wachtwoord
+                    <input type="text" name="lastname" required>
+                </label>
                 <a href="register.html">Maak een account een account aan.</a>
-                <label for="staylogin">Blijf aangemeld</label>
-                <input type="checkbox" id="staylogin" name="staylogin">
+                <label>Blijf aangemeld
+                    <input type="checkbox" name="staylogin">
+                </label>
             </fieldset>
             <button class="send" type="submit">Inoggen</button>
         </form>

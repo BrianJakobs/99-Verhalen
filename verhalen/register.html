@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+                    <a href="index.html"><img src="assets/images/home.png" alt="logo"></a>
                 </li>
                 <li>
                     <form>
@@ -38,15 +38,19 @@
         <form action="/">
             <fieldset>
                 <legend>Registreren</legend>
-                <label for="firstname">Gebruikersnaam</label>
-                <input type="text" id="firstname" name="firstname" autofocus required placeholder="John">
+                <label>Gebruikersnaam
+                    <input type="text" name="registreer" autofocus required placeholder="John">
+                </label>
 
-                <label for="password">Wachtwoord</label>
-                <input type="text" id="password" name="password" required placeholder="AbC123">
-                <label for="password-repeat">Wachtwoord herhalen</label>
-                <input type="text" id="password-repeat" name="password-repeat" required placeholder="AbC123">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="johndoe@hotmail.com">
+                <label>Wachtwoord
+                    <input type="text" name="registreer" required>
+                </label>
+                <label for="password-repeat">Wachtwoord herhalen
+                    <input type="text" name="registreer" required>
+                </label>
+                <label>Email
+                    <input type="email" name="registreer" placeholder="johndoe@hotmail.com">
+                </label>
             </fieldset>
             <button class="send" type="submit">Registreren</button>
         </form>
