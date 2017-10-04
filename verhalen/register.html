@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>Registreren</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/login.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-</head>
+    </head>
 
 <body>
     <header>
@@ -21,38 +22,37 @@
                     </form>
                 </li>
                 <li>
-                    <a href="index.html">downloads</a>
+                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.png" alt="downloads"></a>
                 </li>
                 <li>
-                    <a href="index.html">Favorieten</a>
+                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.png" alt="favorieten"></a>
                 </li>
                 <li>
-                    <a href="index.html">profiel</a>
+                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.png" alt="profiel"></a>
                 </li>
             </ul>
         </nav>
     </header>
-
-
+    
     <main>
         <form action="/">
             <fieldset>
                 <legend>Registreren</legend>
                 <label>Gebruikersnaam
-                    <input type="text" name="registreer" autofocus required placeholder="John">
+                    <input type="text" name="register" autofocus required placeholder="John">
                 </label>
 
                 <label>Wachtwoord
-                    <input type="text" name="registreer" required>
+                    <input type="password" name="register" required>
                 </label>
-                <label for="password-repeat">Wachtwoord herhalen
-                    <input type="text" name="registreer" required>
+                <label>Wachtwoord herhalen
+                    <input type="password" name="register" required>
                 </label>
                 <label>Email
-                    <input type="email" name="registreer" placeholder="johndoe@hotmail.com">
+                    <input type="email" name="register">
                 </label>
             </fieldset>
-            <button class="send" type="submit">Registreren</button>
+            <button type="submit">Registreren</button>
         </form>
     </main>
 

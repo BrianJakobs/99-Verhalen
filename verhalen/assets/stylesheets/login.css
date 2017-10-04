@@ -1,0 +1,57 @@
+main form {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+main a {
+    display: block;
+    background-color: #2800a0;
+    box-shadow: 0 0.2rem 0#19114a;
+    padding: 0.5rem;
+    width: 80%;
+    border-radius: 5rem;
+    color: #ffffff;
+}
+
+main button {
+    display: block;
+    background-color: #ff3268;
+    box-shadow: 0 0.2rem 0#ce2a56;
+    padding: 0.5rem;
+    width: 80%;
+    border-radius: 5rem;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+main label {
+    font-size: 1.125rem;
+    display: block;
+    text-align: left;
+}
+
+main legend {
+    font-family: NexaBold;
+    display: block;
+    color: #00d66c;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+main input {
+    font-size: 1.1rem;
+    display: block;
+    border: 0.1rem solid #d4d3d3;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.3rem;
+    margin-bottom: 1rem;
+}
+
+main form {
+    grid-column: 1/7;
+}

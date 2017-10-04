@@ -1,0 +1,185 @@
+/*
+========================================
+Home
+========================================
+*/
+
+main>div:first-of-type {
+    background-image: url(../images/cover-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: NexaBold;
+    text-align: center;
+    margin: 0 -5vw;
+    padding: 15vh 0;
+    color: white;
+}
+
+main>div>a {
+    display: block;
+    background-color: #ff3268;
+    box-shadow: 0 0.2rem 0#ce2a56;
+    padding: 1rem;
+/*    width: 20rem;*/
+    margin: 2rem auto 0;
+    font-family: NexaBold;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+
+/*
+========================================
+Filter style
+========================================
+*/
+
+aside {
+    background-color: #ffffff;
+    box-shadow: 0 0.2rem 2rem #606060;
+    padding: 0.5rem 0 1rem 0;
+    margin: 0 -5vw;
+}
+
+aside form {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 0.5rem;
+}
+
+aside ul {
+    display: none;
+}
+
+aside form a {
+    font-family: Nexa;
+    display: block;
+    background-color: #ff3268;
+    box-shadow: 0 0.2rem 0#ce2a56;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    color: #ffffff;
+    margin: 1rem 2rem 0 0;
+}
+
+#categorie:target {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #eef3f7;
+    border-radius: 1rem;
+}
+
+#categorie:target input {
+    display: inline-block;
+}
+
+#categorie:target label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-family: NexaBold;
+    color: #2800a0;
+}
+
+#leesduur:target label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-family: NexaBold;
+    color: #2800a0;
+}
+
+#sorteer:target label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-family: NexaBold;
+    color: #2800a0;
+}
+
+#leesduur:target {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #eef3f7;
+    border-radius: 1rem;
+}
+
+#sorteer:target {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #eef3f7;
+    border-radius: 1rem;
+}
+
+aside h3 {
+    display: inline-block;
+    font-family: NexaBold;
+    color: #2800a0;
+}
+
+/*
+========================================
+Article style
+========================================
+*/
+
+article img {
+    width: 2rem;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+article button {
+    background: none;
+}
+
+article h2 {
+    margin: -1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: #2800a0;
+    font-family: NexaBold;
+    background-color: #ffffff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+article {
+    position: relative;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #eef3f7;
+    border-radius: 1rem;
+}
+
+article>footer>time {
+    margin-bottom: 1em;
+    font-family: NexaBold;
+    color: #00d66c;
+}
+
+article>a {
+    font-family: Nexa;
+    display: inline-block;
+    background-color: #2800a0;
+    box-shadow: 0 0.2rem 0#19114a;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    color: #ffffff;
+}
+
+article>footer>div {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+article>footer>time {
+    margin-bottom: 1rem;
+}
+
+article>p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}

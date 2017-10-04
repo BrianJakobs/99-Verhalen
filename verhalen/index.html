@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Overzicht</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/overview.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+
 
 </head>
 
@@ -22,26 +25,26 @@
                     </form>
                 </li>
                 <li>
-                    <a href="index.html">downloads</a>
+                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.png" alt="downloads"></a>
                 </li>
                 <li>
-                    <a href="index.html">Favorieten</a>
+                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.png" alt="favorieten"></a>
                 </li>
                 <li>
-                    <a href="login.html">profiel</a>
+                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.png" alt="profiel"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <div>
             <h1>TravelStories</h1>
             <a href="index.html">Willekeurig verhaal</a>
-        </section>
+        </div>
         <aside>
             <form action="/">
-                <h3>Filter</h3>
+                <h3>Filter op:</h3>
                 <a href="#categorie">Categorieën</a>
                 <ul id="categorie">
                     <li>
@@ -100,18 +103,9 @@
                 </ul>
             </form>
             <form action="/">
+                <h3>Sorteer op:</h3>
                 <a href="#sorteer">Sorteer</a>
                 <ul id="sorteer">
-                    <li>
-                        <label>A-Z
-                            <input type="radio" name="sorteer">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Z-A
-                            <input type="radio" name="sorteer">
-                        </label>
-                    </li>
                     <li>
                         <label>Datum&#8593;
                             <input type="radio" name="sorteer">
@@ -137,39 +131,39 @@
         </aside>
         <section>
             <article>
-                <h2>Zombie</h2>
-                <button><img src="assets/images/like.png" alt="Like"></button>
-                <a href="verhaal-1.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                <time datetime="2011-06-21">21-juni-2011</time>
-                <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op <i>zoek</i> naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees. Het is gekkenwerk dat ik hier ben, maar de brandstof van de bus is op. Ik hoopte dwars door de menigte wandelende lijken heen te kunnen rauzen. Maar het mocht niet zo zijn. Ergens ter hoogte […]</p>
+                <h2>Bejaard</h2>
+                <footer>
+                    <!--                    <time datetime="2011-05-25">25-mei-2011</time>-->
+                    <div>
+                        <a href="verhaal-1.html"><img src="assets/images/comment.png" alt="Comments"></a>
+                        <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
+                    </div>
+                </footer>
+                <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, want dit is de eindhalte, de goede man hoeft de komende twintig minuten nergens naartoe. Het zal […]</p>
                 <a href="verhaal-1.html">Lees Verder</a>
             </article>
             <article>
-                <h2>Notitie</h2>
-                <time datetime="2011-02-02">02-februari-2011</time>
-                <button><img src="assets/images/like.png" alt="Like"></button>
-                <a href="verhaal-1.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze waar het postkantoor is. Ik verwijs haar naar de Raadhuisstraat. Een auto met […]</p>
+                <h2>Hardboiled</h2>
+                <footer>
+                    <!--                    <time datetime="2011-02-08">8-februri-2011</time>-->
+                    <div>
+                        <a href="verhaal-2.html"><img src="assets/images/comment.png" alt="Comments"></a>
+                        <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
+                    </div>
+                </footer>
+                <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. Een fles goedkope whiskey en oude kaaskoekjes. Ik stap uit. Centraal Station, de anus van Amsterdam. Pneumatisch geboor trilt zich […]</p>
                 <a href="verhaal-2.html">Lees Verder</a>
             </article>
             <article>
-                <h2>Beroemd</h2>
-                <time datetime="2011-07-11">11-juli-2011</time>
-                <button><img src="assets/images/like.png" alt="Like"></button>
-                <a href="verhaal-1.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er […]</p>
-                <a href="verhaal-3.html">Lees Verder</a>
-            </article>
-                        <article>
-                <h2>Beroemd</h2>
-                <time datetime="2011-07-11">11-juli-2011</time>
-                <button><img src="assets/images/like.png" alt="Like"></button>
-                <a href="verhaal-1.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er […]</p>
+                <h2>Moe</h2>
+                <footer>
+                    <!--                    <time datetime="2011-25-03">25-maart-2011</time>-->
+                    <div>
+                        <a href="verhaal-3.html"><img src="assets/images/comment.png" alt="Comments"></a>
+                        <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
+                    </div>
+                </footer>
+                <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. De regen doet z’n best mij wakker te houden, maar mijn oogleden voelen zwaar, […]</p>
                 <a href="verhaal-3.html">Lees Verder</a>
             </article>
         </section>
