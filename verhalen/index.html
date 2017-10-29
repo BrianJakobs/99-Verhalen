@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/stylesheets/overview.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-
-
-
 </head>
 
 <body>
@@ -17,21 +14,39 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html"><img src="assets/images/home.png" alt="logo"></a>
+                    <a href="index.html"><img src="assets/images/home.svg" alt="logo"></a>
                 </li>
                 <li>
                     <form>
-                        <input type="text" name="zoeken" placeholder="Zoeken..">
+                        <input type="text" list="searchlist" id="search" name="search" placeholder="Typ je zoekwoord">
+                        <datalist id="searchlist">
+                            <option value="Bejaard">
+                                <option value="hoi">
+                                    <option value="Moe">
+                                        <option value="Bejaard">
+                                            <option value="hey">
+                                                <option value="Moe">
+                                                    <option value="Bejaard">
+                                                        <option value="hallo">
+                                                            <option value="Moe">
+                                                                <option value="Bejaard">
+                                                                    <option value="Hardboiled">
+                                                                        <option value="huh">
+                                                                            <option value="Bejaard">
+                                                                                <option value="Hardboiled">
+                                                                                    <option value="Moe">
+                        </datalist>
+                        <button type="submit"><img src="assets/images/searchNew-01.svg" alt="zoek knop"></button>
                     </form>
                 </li>
                 <li>
-                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.png" alt="downloads"></a>
+                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.svg" alt="downloads"></a>
                 </li>
                 <li>
-                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.png" alt="favorieten"></a>
+                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.svg" alt="favorieten"></a>
                 </li>
                 <li>
-                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.png" alt="profiel"></a>
+                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.svg" alt="profiel"></a>
                 </li>
             </ul>
         </nav>
@@ -40,138 +55,173 @@
     <main>
         <div>
             <h1>TravelStories</h1>
-            <a href="index.html">Willekeurig verhaal</a>
+            <a href="index.html">Verder lezen ></a>
         </div>
         <aside>
-            <form action="/">
-                <h3>Filter op:</h3>
-                <a href="#categorie">Categorieën</a>
-                <ul id="categorie">
+            <nav>
+                <ul>
                     <li>
-                        <label>Bekende mensen
-                            <input type="checkbox" name="categorieën">
-                        </label>
+                        <button>Resultaten</button>
                     </li>
                     <li>
-                        <label>Dichtvormen
-                            <input type="checkbox" name="categorieën">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Gemoedstoestand
-                            <input type="checkbox" name="gemoedstoestand">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Perspectief
-                            <input type="checkbox" name="categorieën">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Schrijfstijl
-                            <input type="checkbox" name="categorieën">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Spreekstijl
-                            <input type="checkbox" name="categorieën">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Thematische toevoeging
-                            <input type="checkbox" name="categorieën">
-                        </label>
+                        <button>Populair</button>
                     </li>
                 </ul>
-                <a href="#leesduur">Leesduur</a>
-                <ul id="leesduur">
+            </nav>
+            <button>Filter</button>
+            <form action="/">
+                <button><img src="assets/images/close-01-01.svg" alt="close"></button>
+                <h3>Leesduur</h3>
+                <ul>
                     <li>
-                        <label>Kort
-                            <input type="checkbox" name="leesduur">
-                        </label>
+                        <input type="checkbox" id="kort" name="leesduur">
+                        <label for="kort">Kort</label>
                     </li>
                     <li>
-                        <label>Normaal
-                            <input type="checkbox" name="leesduur">
-                        </label>
+                        <input type="checkbox" id="normaal" name="leesduur">
+                        <label for="normaal">Normaal</label>
                     </li>
                     <li>
-                        <label>Lang
-                            <input type="checkbox" name="leesduur">
-                        </label>
+                        <input type="checkbox" id="lang" name="leesduur">
+                        <label for="lang">Lang</label>
                     </li>
                 </ul>
-            </form>
-            <form action="/">
-                <h3>Sorteer op:</h3>
-                <a href="#sorteer">Sorteer</a>
-                <ul id="sorteer">
+                <h3>Categorieën</h3>
+                <ul>
                     <li>
-                        <label>Datum&#8593;
-                            <input type="radio" name="sorteer">
-                        </label>
+                        <input type="checkbox" id="bekende" name="categorieën">
+                        <label for="bekende">Bekende mensen</label>
                     </li>
                     <li>
-                        <label>Datum&#8595;
-                            <input type="radio" id="datum" name="sorteer">
-                        </label>
+                        <input type="checkbox" id="dichtvorm" name="categorieën">
+                        <label for="dichtvorm">Dichtvormen</label>
                     </li>
                     <li>
-                        <label>Likes&#8593;
-                            <input type="radio" name="sorteer">
-                        </label>
+                        <input type="checkbox" id="stemming" name="categorieën">
+                        <label for="stemming">Stemming</label>
                     </li>
                     <li>
-                        <label>Likes&#8595;
-                            <input type="radio" name="sorteer">
-                        </label>
+                        <input type="checkbox" id="perspectief" name="categorieën">
+                        <label for="perspectief">Perspectief</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="schrijfstijl" name="categorieën">
+                        <label for="schrijfstijl">Schrijfstijl</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="spreekstijl" name="categorieën">
+                        <label for="spreekstijl">Spreekstijl</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="thema" name="categorieën">
+                        <label for="thema">Thema</label>
+                    </li>
+                </ul>
+                <h3>Sorteer</h3>
+                <ul>
+                    <li>
+                        <input type="radio" id="leesduur-lang" name="sorteer">
+                        <label for="leesduur-lang">Leesduur&#8593;</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="leesduur-kort" name="sorteer">
+                        <label for="leesduur-kort">Leesduur&#8595;</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="favorieten-veel" name="sorteer">
+                        <label for="favorieten-veel">Favorieten&#8593;</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="favorieten-weining" name="sorteer">
+                        <label for="favorieten-weining">Favorieten&#8595;</label>
                     </li>
                 </ul>
             </form>
         </aside>
-        <section>
-            <article>
-                <h2>Bejaard</h2>
-                <footer>
-                    <!--                    <time datetime="2011-05-25">25-mei-2011</time>-->
-                    <div>
-                        <a href="verhaal-1.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                        <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                    </div>
-                </footer>
-                <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, want dit is de eindhalte, de goede man hoeft de komende twintig minuten nergens naartoe. Het zal […]</p>
-                <a href="verhaal-1.html">Lees Verder</a>
-            </article>
-            <article>
-                <h2>Hardboiled</h2>
-                <footer>
-                    <!--                    <time datetime="2011-02-08">8-februri-2011</time>-->
-                    <div>
-                        <a href="verhaal-2.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                        <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                    </div>
-                </footer>
-                <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. Een fles goedkope whiskey en oude kaaskoekjes. Ik stap uit. Centraal Station, de anus van Amsterdam. Pneumatisch geboor trilt zich […]</p>
-                <a href="verhaal-2.html">Lees Verder</a>
-            </article>
-            <article>
-                <h2>Moe</h2>
-                <footer>
-                    <!--                    <time datetime="2011-25-03">25-maart-2011</time>-->
-                    <div>
-                        <a href="verhaal-3.html"><img src="assets/images/comment.png" alt="Comments"></a>
-                        <button><img src="assets/images/add-favorite.png" alt="Favorieten"></button>
-                    </div>
-                </footer>
-                <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. De regen doet z’n best mij wakker te houden, maar mijn oogleden voelen zwaar, […]</p>
-                <a href="verhaal-3.html">Lees Verder</a>
-            </article>
-        </section>
+        <div>
+            <section>
+                <article>
+                    <h2>Bejaard</h2>
+                    <footer>
+                        <div>
+                            <a href="verhaal-1.html"><img src="assets/images/comment.svg" alt="Comments"></a>
+                            <button><img src="assets/images/add-favorite.svg" alt="Favorieten"></button>
+                        </div>
+                    </footer>
+                    <img src="assets/images/thumbnails/thumbnail-bejaard.png" alt="thumbnail bejaard">
+                    <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, […]</p>
+                    <a href="bejaard.html">Lees Verder ></a>
+                </article>
+                <article>
+                    <h2>Hardboiled</h2>
+                    <footer>
+                        <div>
+                            <a href="verhaal-2.html"><img src="assets/images/comment.svg" alt="Comments"></a>
+                            <button><img src="assets/images/add-favorite.svg" alt="Favorieten"></button>
+                        </div>
+                    </footer>
+                    <img src="assets/images/thumbnails/thumbnail-hardboiled.png" alt="thumbnail hardboiled">
+                    <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. […]</p>
+                    <a href="hardboiled.html">Lees Verder ></a>
+                </article>
+                <article>
+                    <h2>Moe</h2>
+                    <footer>
+                        <div>
+                            <a href="verhaal-3.html"><img src="assets/images/comment.svg" alt="Comments"></a>
+                            <button><img src="assets/images/add-favorite.svg" alt="Favorieten"></button>
+                        </div>
+                    </footer>
+                    <img src="assets/images/thumbnails/thumbnail-moe.png" alt="thumbnail moe">
+                    <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. […]</p>
+                    <a href="moe.html">Lees Verder ></a>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>Moe</h2>
+                    <footer>
+                        <div>
+                            <a href="verhaal-3.html"><img src="assets/images/comment.svg" alt="Comments"></a>
+                            <button><img src="assets/images/add-favorite.svg" alt="Favorieten"></button>
+                        </div>
+                    </footer>
+                    <img src="assets/images/thumbnails/thumbnail-moe.png" alt="thumbnail moe">
+                    <p>De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was. De mensen lopen in zichzelf gekeerd over het plein. […]</p>
+                    <a href="moe.html">Lees Verder ></a>
+                </article>
+                <article>
+                    <h2>Bejaard</h2>
+                    <footer>
+                        <div>
+                            <a href="verhaal-1.html"><img src="assets/images/comment.svg" alt="Comments"></a>
+                            <button><img src="assets/images/add-favorite.svg" alt="Favorieten"></button>
+                        </div>
+                    </footer>
+                    <img src="assets/images/thumbnails/thumbnail-bejaard.png" alt="thumbnail bejaard">
+                    <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, […]</p>
+                    <a href="bejaard.html">Lees Verder ></a>
+                </article>
+                <article>
+                    <h2>Hardboiled</h2>
+                    <footer>
+                        <div>
+                            <a href="verhaal-2.html"><img src="assets/images/comment.svg" alt="Comments"></a>
+                            <button><img src="assets/images/add-favorite.svg" alt="Favorieten"></button>
+                        </div>
+                    </footer>
+                    <img src="assets/images/thumbnails/thumbnail-hardboiled.png" alt="thumbnail hardboiled">
+                    <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen en natte hond. Mijn zoon slaapt. Goddank. Een hardnekkige kater bonkt tegen mijn slapen. Flashback naar de avond ervoor. […]</p>
+                    <a href="hardboiled.html">Lees Verder ></a>
+                </article>
+            </section>
+        </div>
     </main>
 
     <footer>
         <p>© 2017 www.travelstories.nl</p>
     </footer>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

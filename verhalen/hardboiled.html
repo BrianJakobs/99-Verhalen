@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hardboiled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="assets/stylesheets/login.css">
+    <link rel="stylesheet" href="assets/stylesheets/hardboiled.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="assets/images/home.svg" alt="logo"></a>
+                </li>
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Typ je zoekwoord">
+                        <button type="submit"><img src="assets/images/searchNew-01.svg" alt="zoek knop"></button>
+                    </form>
+                </li>
+                <li>
+                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.svg" alt="downloads"></a>
+                </li>
+                <li>
+                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.svg" alt="favorieten"></a>
+                </li>
+                <li>
+                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.svg" alt="profiel"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="assets/images/stories/mobiel-hardboiled.png" alt="hardboiled verhaal">
+        <img src="assets/images/stories/tablet-hardboiled.png" alt="hardboiled verhaal">
+        <img src="assets/images/stories/desktop-hardboiled.png" alt="hardboiled verhaal">
+        <form action="/">
+            <fieldset>
+                <legend>Plaats een reactie</legend>
+                <input type="text" id="userName" name="comments" required>
+                <label for="userName">Gebruikersnaam</label>
+
+                <input type="email" id="email" name="comments" required>
+                <label for="email">E-mail</label>
+
+                <textarea id="message" rows="5" cols="25" name="comments" required></textarea>
+                <label for="message">Bericht</label>
+            </fieldset>
+            <button type="submit">Reactie plaatsen</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2017 www.travelstories.nl</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

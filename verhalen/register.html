@@ -5,52 +5,52 @@
     <meta charset="UTF-8">
     <title>Registreren</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/stylesheets/login.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    </head>
+    <link rel="stylesheet" href="assets/stylesheets/login.css">
+</head>
 
 <body>
     <header>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html"><img src="assets/images/home.png" alt="logo"></a>
+                    <a href="index.html"><img src="assets/images/home.svg" alt="logo"></a>
                 </li>
                 <li>
                     <form>
-                        <input type="text" name="zoeken" placeholder="Zoeken..">
+                        <input type="text" name="search" placeholder="Typ je zoekwoord">
+                        <button type="submit"><img src="assets/images/searchNew-01.svg" alt="zoek knop"></button>
                     </form>
                 </li>
                 <li>
-                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.png" alt="downloads"></a>
+                    <a href="index.html"><span>Downloads</span><img src="assets/images/downloads.svg" alt="downloads"></a>
                 </li>
                 <li>
-                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.png" alt="favorieten"></a>
+                    <a href="index.html"><span>Favorieten</span><img src="assets/images/favorite.svg" alt="favorieten"></a>
                 </li>
                 <li>
-                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.png" alt="profiel"></a>
+                    <a href="login.html"><span>Profiel</span><img src="assets/images/profile.svg" alt="profiel"></a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <form action="/">
             <fieldset>
                 <legend>Registreren</legend>
-                <label>Gebruikersnaam
-                    <input type="text" name="register" autofocus required placeholder="John">
-                </label>
+                
+                <input type="text" id="userName" name="register" autofocus required>
+                <label for="userName">Gebruikersnaam </label>
 
-                <label>Wachtwoord
-                    <input type="password" name="register" required>
-                </label>
-                <label>Wachtwoord herhalen
-                    <input type="password" name="register" required>
-                </label>
-                <label>Email
-                    <input type="email" name="register">
-                </label>
+                <input type="password" id="passWord" name="register" required>
+                <label for="passWord">Wachtwoord </label>
+                
+                <input type="password" id="pwRepeat" name="register" required>
+                <label for="pwRepeat">Wachtwoord herhalen </label>
+                
+                <input type="email" id="email" name="register"  required>
+                <label for="email">Email </label>
             </fieldset>
             <button type="submit">Registreren</button>
         </form>
