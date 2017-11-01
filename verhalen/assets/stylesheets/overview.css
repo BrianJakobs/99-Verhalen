@@ -41,14 +41,21 @@ main>aside>button {
     grid-column: 1/3;
 }
 
-main>div>section {
+main>div>div>section {
     grid-column-gap: 1.2rem;
     display: inline-grid;
     grid-template-columns: inherit;
     grid-column: 1/7;
 }
 
-main>div>section>article {
+main>div>div {
+    grid-column-gap: 1.2rem;
+    display: inline-grid;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+}
+
+main>div>div>section>article {
     grid-column: 1/7;
 }
 
@@ -152,7 +159,10 @@ main>aside>nav>ul>li>button:active {
 }
 
 aside form {
-    display: none;
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-10rem);
     transition: all 0.2s;
 }
 
@@ -192,7 +202,7 @@ aside h3 {
 
 .visible {
     position: fixed;
-    visibility: visible;
+    opacity: 1;
     z-index: 100;
     display: inline-block;
     top: 2vw;
@@ -204,6 +214,7 @@ aside h3 {
     border-radius: 1rem;
     font-family: NexaBold;
     color: #2800a0;
+    transform: translateY(0vh);
     box-shadow: 0 0 0 10vw rgba(0, 0, 0, 0.5);
 }
 
@@ -223,16 +234,16 @@ aside h3 {
 
 .visible ul input[type="checkbox"] {
     display: none;
-    position:absolute;
-    z-index:0;
-    opacity:0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
 }
 
 .visible ul input[type="radio"] {
     display: none;
-    position:absolute;
-    z-index:0;
-    opacity:0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
 }
 
 .visible ul:first-of-type {
@@ -253,11 +264,11 @@ aside h3 {
 }
 
 .visible ul:first-of-type label {
-    display:inline-block;
+    display: inline-block;
     width: 100%;
     padding: 1.5rem 0;
     margin: 0rem;
-    cursor:pointer;
+    cursor: pointer;
     background-color: #ff3268;
     box-shadow: inset -0em -0.3rem #ca2b55;
     border-radius: 0.5rem;
@@ -283,17 +294,17 @@ aside h3 {
 
 .visible ul:nth-of-type(2) input[type="checkbox"] {
     display: none;
-    position:absolute;
-    z-index:0;
-    opacity:0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
 }
 
 .visible ul:nth-of-type(2) label {
-    display:inline-block;
+    display: inline-block;
     width: 100%;
     padding: 1.8rem 0;
     margin: 0rem;
-    cursor:pointer;
+    cursor: pointer;
     background-color: #ff3268;
     box-shadow: inset -0em -0.3rem #ca2b55;
     border-radius: 0.5rem;
@@ -319,11 +330,11 @@ aside h3 {
 }
 
 .visible ul:last-of-type label {
-    display:inline-block;
+    display: inline-block;
     width: 100%;
     padding: 1.5rem 0;
     margin: 0rem;
-    cursor:pointer;
+    cursor: pointer;
     background-color: #2800a0;
     box-shadow: inset -0em -0.3rem #19114a;
     border-radius: 5rem;
@@ -334,7 +345,7 @@ aside h3 {
 .visible h2 {
     font-size: 1.5rem;
     display: inline-block;
-} 
+}
 
 .visible h3 {
     font-size: 1.5rem;
@@ -367,22 +378,16 @@ aside h3 {
     outline: none;
 }
 
-@media(min-width: 30rem) {
-    .visible ul:nth-of-type(2) li {
-        padding: 0.25rem;
-        width: 50%;
-    }
-}
-
-input[type="checkbox"]:checked ~ label { 
-    background-color:#ff658e;
+input[type="checkbox"]:checked ~ label {
+    background-color: #ff658e;
     box-shadow: inset -0em 0.3rem #ca2b55;
 }
 
-input[type="radio"]:checked ~ label { 
-    background-color:#5e40b8;
+input[type="radio"]:checked ~ label {
+    background-color: #5e40b8;
     box-shadow: inset -0em 0.3rem #19114a;
 }
+
 
 /*
 ========================================
@@ -390,18 +395,23 @@ Article style
 ========================================
 */
 
-
-
-body {
-    overflow-x:hidden;
+main>div:nth-of-type(2) {
+    overflow: hidden;
 }
 
-
-main>div:nth-of-type(2) {
+main>div>div {
     position: relative;
 }
 
-main>div>section:last-of-type {
+main>div>div>section>h5 {
+    grid-column: 1/7;
+    font-family: NexaBold;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #2800a0;
+}
+
+main>div>div>section:last-of-type {
     grid-column: 1/7;
     position: absolute;
     width: 100%;
@@ -409,7 +419,7 @@ main>div>section:last-of-type {
     right: -100vw;
 }
 
-main>div {
+main>div>div {
     transition: all 1s ease;
 }
 
@@ -454,8 +464,8 @@ article {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 2.5rem;
-    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
     background-color: #eef3f7;
     border-radius: 1rem;
 }
@@ -501,5 +511,4 @@ article>footer>div {
 article>img {
     width: 100%;
     height: auto;
-    transition: width 2s;
 }

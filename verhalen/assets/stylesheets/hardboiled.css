@@ -6,15 +6,8 @@ Body
 
 body {
     background-color: #f3e5d8;
+    overflow-x: hidden;
 }
-
-/*
-main {
-    margin-left: -5vw;
-    margin-right: -5vw;
-}
-*/
-
 
 /*
 ========================================
@@ -59,10 +52,11 @@ Image
 */
 
 main img {
-    width:calc(100% + 10vw);
+    width: calc(100% + 10vw);
     margin-left: -5vw;
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
     z-index: 0;
+    transition: filter 0.4s ease;
 }
 
 main img:nth-of-type(2) {
@@ -74,8 +68,54 @@ main img:last-of-type {
 }
 
 .glitch {
-    filter: invert();
+    animation: glitch 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
+
+.filter {
+    filter: hue-rotate(360deg);
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0, 0.05rem) rotate(0deg);
+    }
+    10% {
+        transform: translate(0, 0rem) rotate(0);
+    }
+    20% {
+        transform: translate(0, 0rem) rotate(0deg);
+    }
+    30% {
+        transform: translate(0, 0rem) rotate(0deg);
+    }
+    40% {
+        transform: translate(-0.2rem, -0.05rem) rotate(0);
+    }
+    41% {
+        transform: translate(0.2rem, -0.05rem) rotate(0);
+    }
+    50% {
+        transform: translate(0, 0rem) rotate(0.2deg);
+    }
+    60% {
+        transform: translate(0, 0.05rem) rotate(0);
+    }
+    70% {
+        transform: translate(0, 0rem) rotate(0);
+    }
+    80% {
+        transform: translate(0, 0rem) rotate(0);
+    }
+    90% {
+        transform: translate(0.1rem, 0rem) rotate(0);
+    }
+    100% {
+        transform: translate(0, -0.05rem) rotate(0);
+    }
+}
+
 
 /*
 ========================================
@@ -89,12 +129,14 @@ main img:last-of-type {
     }
     main img:nth-of-type(2) {
         display: block;
+        
     }
     main img:last-of-type {
         display: none;
     }
     main button {
-    width: 50%;
+        width: 50%;
+    }
 }
 
 @media(min-width: 80rem) {
